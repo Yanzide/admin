@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>系统管理</title>
+	<link rel="stylesheet" href="../static/lib/css/bootstrap.css">
+	<link rel="stylesheet" href="../static/css/common.css?1234567">
+	<link rel="stylesheet" href="../static/css/carousel.css">
+</head>
+<body>
+	<div class="containe">
+		<div class="header">
+			<small class="pull-right glyphicon glyphicon-off"></small>
+			<span class="pull-left"></span>
+			<h1>管理系统</h1>
+		</div>
+		<ul class="nav nav-pills nav-justified" role="tablist">
+			<li role="presentation">
+				<a href="../index.html">首页</a>
+			</li>
+			<li role="presentation" class="active">
+				<a href="./system.html">系统介绍</a>
+			</li>
+			<li role="presentation">
+				<a href="javascript:;" data-toggle="dropdown">教室管理<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+						<a href="./roomlist.html">教室列表</a>
+					</li>
+				</ul>
+			</li>
+			<li role="presentation">
+				<a href="javascript:;" data-toggle="dropdown">借用管理<span class="caret"></span></a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					<li>
+						<a href="./history.html">我的借用记录</a>
+					</li>
+				</ul>
+			</li>
+			<li role="presentation">
+				<a href="javascript:;" data-toggle="dropdown">报修管理<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="./roomrepair.html">教室报修</a>
+					</li>
+				</ul>
+			</li>
+			<li role="presentation" >
+				<a href="javascript:;" data-toggle="dropdown" >个人信息管理<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="./userinfo.html">修改个人信息</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="tab-content nav-justified">
+			<!-- 首页开始 -->
+			<div role="tabpanel" class="tab-pane fade in active bg_img" id="system">
+				<div class="row in_count">
+					<div class="col-lg-2 side-left">
+						<p>系统介绍</p>
+					</div>
+					<div class="col-lg-10 side-right">
+						<h1>这是介绍</h1>
+						<p>系统如何使用,自己研究吧</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<p>你的页脚</p>
+		</div>
+	</div>
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/lib/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+ul,ol,li,div {
+  margin: 0;
+  padding: 0
+}
+
+ul,ol {
+  list-style: none
+}
+
+.ft-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ft-carousel .carousel-inner {
+  height: 100%;
+  width: 500%;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+.ft-carousel .carousel-inner .carousel-item {
+  float: left;
+  height: 100%;
+  width: 84em;
+}
+
+.ft-carousel .carousel-item img {
+  width: 100%;
+  height: 580px;
+}
+
+.carousel-indicators {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  margin-left:0;
+  top: 75%;
+  left: 0;
+}
+.carousel-indicators span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: cyan;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer
+}
+
+.carousel-indicators span.active {
+  width: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  background-size: 100%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 46em;
+  width: 56px;
+  height: 77px;
+  margin-top: 25px;
+  cursor: pointer
+}
+
+.carousel-prev-btn {
+  left: 30%;
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  /*background: url(../images/arro.png) center no-repeat;*/
+}
+
+.carousel-next-btn {
+  right: 30%;
+  /*background: url(../images/arro.png) center no-repeat;*/
+}

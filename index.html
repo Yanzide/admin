@@ -1,0 +1,132 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="./static/lib/css/bootstrap.css">
+		<link rel="stylesheet" href="./static/css/common.css">
+		<link rel="stylesheet" href="./static/css/carousel.css">
+	</head>
+	<body>
+		<div class="containe">
+			<div class="header">
+				<form action="" class="pull-right"><button type="submit" class="btn" style="background-color: #1c49bf;"><small class="glyphicon glyphicon-off"></small></button></form>
+				<span class="pull-left"></span>
+				<h1>管理系统</h1>
+			</div>
+			<ul class="nav nav-pills nav-justified" role="tablist">
+				<li role="presentation" class="active">
+					<a href="./index.html">首页</a>
+				</li>
+				<li role="presentation">
+					<a href="./view/system.html">系统介绍</a>
+				</li>
+				<li role="presentation">
+					<a href="javascript:;" data-toggle="dropdown">教室管理<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="dLabel">
+						<li>
+							<a href="./view/roomlist.html">教室列表</a>
+						</li>
+					</ul>
+				</li>
+				<li role="presentation">
+					<a href="javascript:;" data-toggle="dropdown">借用管理<span class="caret"></span></a>
+					<ul class="dropdown-menu" aria-labelledby="dLabel">
+						<li>
+							<a href="./view/history.html">我的借用记录</a>
+						</li>
+					</ul>
+				</li>
+				<li role="presentation">
+					<a href="javascript:;" data-toggle="dropdown">报修管理<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="./view/roomrepair.html">教室报修</a>
+						</li>
+					</ul>
+				</li>
+				<li role="presentation">
+					<a href="javascript:;" data-toggle="dropdown">个人信息管理<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="./view/userinfo.html">修改个人信息</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="tab-content nav-justified">
+				<!-- 首页开始 -->
+				<div role="tabpanel" class="tab-pane fade in active" id="home">
+					<div class="cursore">
+						<div class="ft-carousel" id="carousel">
+							<ul class="carousel-inner clearfix">
+								<li class="carousel-item"><img src="./static/images/01.jpg"></li>
+								<li class="carousel-item"><img src="./static/images/02.jpg"></li>
+								<li class="carousel-item"><img src="./static/images/03.jpg"></li>
+								<li class="carousel-item"><img src="./static/images/04.jpg"></li>
+								<li class="carousel-item"><img src="./static/images/05.jpg"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					<ul class="row">
+						<li class="col-lg-4">
+							<i class="glyphicon glyphicon-comment"></i> <span>公告</span>
+						</li>
+						<li class="col-lg-4">
+							<i class="glyphicon glyphicon-list-alt"></i> <span>关于系统</span>
+						</li>
+						<li class="col-lg-4">
+							<i class="glyphicon glyphicon-education"></i> <span>学校状况</span>
+						</li>
+					</ul>
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="footinfo">
+								<p><a href="./view/notice/notice_01.html">公告一</a></p>
+								<p><a href="">公告二</a></p>
+								<p><a href="">公告三</a></p>
+								<p><a href="">公告四</a></p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="footinfo">
+								<ul>
+									<li>关于系统: </li>
+									<li>关于系统: </li>
+									<li>关于系统: </li>
+									<li>关于系统: </li>
+									<li>关于系统: </li>
+									<li>关于系统: </li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="footinfo">
+								<ul>
+									<li>学校概况: </li>
+									<li>学校概况: </li>
+									<li>学校概况: </li>
+									<li>学校概况: </li>
+									<li>学校概况: </li>
+									<li>学校概况: </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="foot">
+				<p>你的页脚</p>
+			</div>
+			<script src="./static/js/jquery.min.js"></script>
+			<script src="./static/lib/js/bootstrap.min.js"></script>
+			<script src="./static/js/carousel.js"></script>
+			<script>
+				$(".cursore").FtCarousel();
+			</script>
+		</body>
+		</html>
